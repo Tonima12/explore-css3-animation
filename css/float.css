@@ -1,0 +1,17 @@
+/*
+.container {
+    display: flex;
+}
+*/
+
+
+.box {
+    cursor: pointer;
+    float: left;
+    width: 250px;
+    max-height: 400px;
+    padding: 15px;
+    margin: 10px;
+    background-color: lightskyblue;
+
+}

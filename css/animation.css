@@ -1,0 +1,85 @@
+/* animation.html  */
+
+/* one way same line e move korbe  */
+
+@keyframes sliding {
+    from {
+        background-color: aquamarine;
+        left: 0%;
+    }
+
+    to {
+        background-color: darkred;
+        left: 200px;
+    }
+
+}
+
+.stage {
+    width: 300px;
+    height: 300px;
+    background-color: burlywood;
+}
+
+.balls {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: relative;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+
+
+/* another way bounce korbe  */
+
+@keyframes slide {
+    0% {
+        background-color: yellow;
+        left: 0%;
+        top: 0%;
+    }
+
+    25% {
+        top: 225px;
+        background-color: red;
+        transform: scale(0.5);
+        /*joto bar niche bari khabe totbar chooto hobe */
+    }
+
+    50% {
+        top: 0px;
+        background-color: yellow;
+        transform: scale(1);
+    }
+
+    75% {
+        top: 225px;
+        background-color: red;
+        transform: scale(0.5);
+    }
+
+    100% {
+        background-color: yellow;
+        left: 700px;
+        top: 0%;
+    }
+
+}
+
+.stages {
+    width: 800px;
+    height: 300px;
+    background-color: burlywood;
+}
+
+.balling {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: relative;
+    animation: slide 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
